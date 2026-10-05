@@ -27,7 +27,7 @@ const experience = [
     ],
   },
   {
-    period: 'Jun 2023 — Nov 2024',
+    period: 'Jun 2023 — Nov 2023',
     role: 'Cybersecurity Intern',
     company: 'ITEC LTD',
     place: 'Kigali, Rwanda',
@@ -44,11 +44,11 @@ const projects = [
     number: '01',
     title: 'Post-Quantum Cryptography Readiness Assessment',
     label: 'Research · 2026 — Present',
-    description: "Preparing Rwanda's digital infrastructure for the post-quantum era through practical policy and technical analysis.",
+    description: "Assessing Rwanda's financial-sector readiness for the post-quantum era through practical policy and technical analysis.",
     points: [
-      'Conducting TLS deployment scans of .gov.rw domains and financial institutions',
-      "Analyzing policy documents to assess Rwanda's PQC migration preparedness",
-      "Developing first empirical assessment of Rwanda's quantum vulnerability",
+      'Analyzing financial-sector cybersecurity standards for PQC readiness',
+      'Comparing Rwanda’s policy frameworks against international PQC guidance',
+      "Identifying regulatory gaps and developing a sector-level readiness framework",
     ],
   },
   {
@@ -108,6 +108,7 @@ function App() {
               {item}
             </button>
           ))}
+          <div className="nav-socials"><a href="https://github.com/dizere14" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/didier-izere-51a906374/" target="_blank" rel="noreferrer">LinkedIn</a></div>
           <a className="nav-cta" href="mailto:dizere@andrew.cmu.edu">Start a conversation <span>↗</span></a>
         </nav>
       </header>
@@ -120,12 +121,12 @@ function App() {
             <p className="hero-lead">I&apos;m Didier Izere — a cybersecurity researcher at Carnegie Mellon University Africa focused on post-quantum cryptography readiness, digital resilience, and practical security education for the continent.</p>
             <div className="hero-actions">
               <button className="button button-dark" onClick={() => scrollTo('projects')}>Explore my work <span>↓</span></button>
-              <a className="text-link" href="mailto:dizere@andrew.cmu.edu">Get in touch <span>↗</span></a>
+              <a className="text-link" href="/Didier_Izere_Resume.pdf" target="_blank" rel="noreferrer">View my resume <span>↗</span></a>
             </div>
           </div>
           <div className="hero-aside">
             <div className="portrait-card">
-              <img src="/100_0469.jpg" alt="Didier Izere" className="portrait-img" />
+              <img src="/me.png" alt="Didier Izere" className="portrait-img" />
               <div className="portrait-grid" />
               <p>Researching the<br /><strong>next layer of trust.</strong></p>
             </div>
@@ -142,8 +143,8 @@ function App() {
             <h2>Curiosity with<br /><em>consequence.</em></h2>
             <div className="about-body">
               <p className="large-copy">My work sits at the intersection of cybersecurity, research, and education. I study how emerging threats affect African digital infrastructure, then turn that understanding into practical systems and learning experiences.</p>
-              <p>As a Certified Ethical Hacker and software developer, I bring both technical depth and a teacher&apos;s instinct for clarity. I&apos;m currently pursuing a Master of Science in Information Technology at Carnegie Mellon University Africa, with a concentration in cybersecurity.</p>
-              <div className="stat-row"><div><strong>3+</strong><span>Years in<br />cybersecurity</span></div><div><strong>500+</strong><span>Learners<br />reached</span></div><div><strong>01</strong><span>Research<br />focus</span></div></div>
+              <p>As a Certified Ethical Hacker and software developer, I bring technical depth and a teacher&apos;s instinct for clarity. I&apos;m pursuing a Master of Science in Information Technology at Carnegie Mellon University Africa, concentrating on cybersecurity and the future of digital trust.</p>
+              <div className="stat-row"><div><strong>3+</strong><span>Years in<br />cybersecurity</span></div><div><strong>500+</strong><span>Learners<br />reached</span></div><div><strong>CEH</strong><span>Certified<br />ethical hacker</span></div></div>
             </div>
           </div>
         </section>
@@ -162,15 +163,15 @@ function App() {
 
         <section id="skills" className="skills section-wrap dark-section">
           <div className="section-label light">04 / Capabilities</div>
-          <div className="skills-grid"><div><h2>Tools for a<br /><em>complex world.</em></h2><p className="skills-intro">A practical toolkit shaped by research, real systems, and years of helping people learn by doing.</p></div><div className="skill-columns"><div><span>Security</span><p>Vulnerability assessment<br />Threat analysis<br />Network security<br />Incident response</p></div><div><span>Technology</span><p>Python · Linux<br />HTML · CSS · JavaScript<br />Wireshark · Burp Suite<br />Metasploit · Nmap · Nessus</p></div><div><span>Community</span><p>Technical education<br />Curriculum design<br />Research communication<br />Mentorship</p></div></div></div>
-          <div className="recognition"><span>Recognition</span><p><strong>PicoCTF 2026</strong> — 1st Runner-up, Carnegie Mellon University Africa &nbsp; / &nbsp; <strong>Quantum Summer Academy 2026</strong> — Selected participant</p></div>
+          <div className="skills-grid"><div><h2>Tools for a<br /><em>complex world.</em></h2><p className="skills-intro">A practical toolkit shaped by research, real systems, and years of helping people learn by doing.</p><a className="resume-button" href="/Didier_Izere_Resume.pdf" target="_blank" rel="noreferrer">Open full resume <span>↗</span></a></div><div className="skill-columns"><div><span>Security</span><p>Vulnerability assessment<br />Threat analysis<br />Network security<br />Web application security<br />Cryptography · TLS</p></div><div><span>Technology</span><p>Python · PHP · Linux<br />HTML · CSS · JavaScript<br />Wireshark · Burp Suite<br />Metasploit · Nmap · Nessus</p></div><div><span>Community</span><p>Technical education<br />Curriculum design<br />Research communication<br />Mentorship</p></div></div></div>
+          <div className="recognition"><span>Recognition</span><p><strong>PicoCTF 2023</strong> — 1st Runner-up &nbsp; / &nbsp; <strong>GCI World 2026</strong> — Selected participant &nbsp; / &nbsp; <strong>Quantum Summer Academy 2026</strong> — Selected participant</p></div>
         </section>
 
         <section id="contact" className="contact section-wrap">
-          <div className="contact-inner"><p className="eyebrow"><span className="eyebrow-line" /> Let&apos;s connect</p><h2>Have a challenge<br /><em>worth solving?</em></h2><p className="contact-copy">Whether you&apos;re exploring a research collaboration, building a security program, or looking for a thoughtful speaker, I&apos;d like to hear from you.</p><a className="contact-email" href="mailto:dizere@andrew.cmu.edu">dizere@andrew.cmu.edu <span>↗</span></a><div className="contact-meta"><span>Kigali, Rwanda</span><span>LinkedIn <b>↗</b></span><span>Available for select collaborations</span></div></div>
+          <div className="contact-inner"><p className="eyebrow"><span className="eyebrow-line" /> Let&apos;s connect</p><h2>Have a challenge<br /><em>worth solving?</em></h2><p className="contact-copy">Whether you&apos;re exploring a research collaboration, building a security program, or looking for a thoughtful speaker, I&apos;d like to hear from you.</p><a className="contact-email" href="mailto:dizere@andrew.cmu.edu">dizere@andrew.cmu.edu <span>↗</span></a><div className="contact-meta"><span>Kigali, Rwanda</span><a href="tel:+250788961564">+250 788 961 564</a><span>Available for select collaborations</span></div><div className="contact-socials"><a href="https://www.linkedin.com/in/didier-izere-51a906374/" target="_blank" rel="noreferrer">LinkedIn <b>↗</b></a><a href="https://github.com/dizere14" target="_blank" rel="noreferrer">GitHub <b>↗</b></a></div></div>
         </section>
       </main>
-      <footer><span>© 2026 Didier Izere</span><a href="mailto:dizere@andrew.cmu.edu">dizere@andrew.cmu.edu</a><span>Cybersecurity · Research · Education</span><a href="#home">Back to top ↑</a></footer>
+      <footer><span>© 2026 Didier Izere</span><a href="mailto:dizere@andrew.cmu.edu">dizere@andrew.cmu.edu</a><a href="https://github.com/dizere14" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/didier-izere-51a906374/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="/Didier_Izere_Resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a><span>Cybersecurity · Research · Education</span><a href="#home">Back to top ↑</a></footer>
     </div>
   )
 }
